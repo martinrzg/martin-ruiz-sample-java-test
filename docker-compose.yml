@@ -1,0 +1,23 @@
+version: '3.1'
+
+services:
+  ms-transaction:
+    image: transaction-ms
+    container_name: transaction-ms
+    build: .
+    ports:
+      - "8080:8080"
+    environment:
+      SERVER_PATH: /api
+    depends_on:
+      - db
+
+  db:
+    image: postgres:latest
+    container_name: postgreSQL
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_DB: 'transactions_ms'
+      POSTGRES_USER: 'clip'
+      POSTGRES_PASSWORD: 'secret'
