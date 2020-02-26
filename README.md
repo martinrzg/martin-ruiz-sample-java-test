@@ -49,7 +49,9 @@ Microservice Restful API to manage transactions operations and services.
    http://localhost:8080/api/swagger-ui.html
    ```
 
+**Sidenote:**
 
+- For easy validation there is a migration with dummy data generates transactions for user **123**. 
 
 ## Technology Stack
 
