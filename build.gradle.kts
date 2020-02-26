@@ -33,7 +33,6 @@ dependencies {
     implementation("io.springfox:springfox-swagger2:${Versions.SWAGGER_VERSION}")
     implementation("io.springfox:springfox-swagger-ui:${Versions.SWAGGER_VERSION}")
 
-
     testImplementation("org.springframework.boot:spring-boot-starter-test") {
         exclude(group = "org.junit.vintage", module = "junit-vintage-engine")
     }
